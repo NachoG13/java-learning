@@ -30,7 +30,8 @@ public class Variables{
     myString = "cambio el valor de la cadena";
     System.out.println(myString);
     ///Integer
-    
+    Integer myInteger = 10;
+    System.out.println(myInteger);
 
 
 
