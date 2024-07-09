@@ -26,6 +26,6 @@ byte myByte =  myInt1 +  myInt2;
 ## Parse()
 Recibe una cadena como entrada, "extrae" la información necesaria y la convierte en un objeto de la clase que llama
 
-`ParseInt(String s, int radix)` -> se utiliza para obtener el tipo de datos primitivo de una cadena.
+`Parse[tipo de dato](String s, int radix)` -> se utiliza para obtener el tipo de datos primitivo de una cadena.
  - `s` -> cadena que representa un valor decimal con signo
  - `radix` -> la base de un sistema numérico. Ej: 2 (binario). *No se pueden con flotantes.*
