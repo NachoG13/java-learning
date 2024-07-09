@@ -27,6 +27,7 @@ Para ingresar datos por consola se necesita la clase Scanner -> Scanner entrada 
     El programador debe especificar esta conversión cuando:
     - Se pasa de un tipo de datos más grande a uno más pequeño 
     - Cuando se convierten tipos no compatibles.
+    
 #### Conversión con datos primitivos
 
  - int numeroInt = (int) numeroDouble; // Conversión explícita de double a int
