@@ -28,22 +28,21 @@ Para ingresar datos por consola se necesita la clase Scanner -> Scanner entrada 
     - Se pasa de un tipo de datos más grande a uno más pequeño 
     - Cuando se convierten tipos no compatibles.
 #### Conversión con datos primitivos
+ No se puede almacenar una variable de un tipo de dato menor al de una suma de tipos de datos mayores sin castearlo.
+*Necesito colocarle el (tipo)*
+ - <int numeroInt = (int) numeroDouble;> -> Conversión explícita de double a int
+ - <byte myByte =  (myByte + myByte;> - > Conversión implícita de int a Byte
 
- - int numeroInt = (int) numeroDouble; // Conversión explícita de double a int
- 
- No se puede almacenar una variable de un tipo de dato menor al de una suma de tipos de datos mayores.
-byte myByte =  myInt1 +  myInt2;
+///Truco, puedo setear el valor decimal a un flotante casteandoló sin signo y volviendo a colocarlo en un flotante:
+myDouble = (int) myDouble;
 #### Conversión con datos de Referencia
-
- - Animal miAnimal = new Perro(); // Conversión implícita de Perro a Animal. Cuando se crea el objeto
- - Perro miPerro = (Perro) miAnimal; // Conversión explícita de Animal a Perro. Cuando se declara
+ - <Animal miAnimal = new Perro();> -> Conversión implícita de Perro a Animal. Cuando se crea el objeto
+ - <Perro miPerro = (Perro) miAnimal;> -> Conversión explícita de Animal a Perro. Cuando se declara
     
-
-
 
 ## Parse()
 Recibe una cadena como entrada, "extrae" la información necesaria y la convierte en un objeto de la clase que llama
 
-`Parse[tipo de dato](String s, int radix)` -> se utiliza para obtener el tipo de datos primitivo de una cadena.
+<Parse[tipo de dato](String s, int radix)`> -> se utiliza para obtener el tipo de datos primitivo de una cadena.
  - `s` -> cadena que representa un valor decimal con signo
  - `radix` -> la base de un sistema numérico. Ej: 2 (binario). *No se pueden con flotantes.*

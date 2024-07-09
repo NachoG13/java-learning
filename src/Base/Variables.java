@@ -13,14 +13,11 @@ public class Variables{
     short myShort = 32767; //16 bits, rango de -32,768 a 32,767.
     int myInt = 1; //32 bits, rango de -2^31 a 2^31 - 1.
     long myLong = 1; //64 bits, rango de -2^63 a 2^63 - 1
-    
-    myByte = 9;
-
 
     //Tipos Numéricos de Punto flotante
     
     float myFloat = 1; //32 bits, rango de aproximadamente ±3.40282347E+38F, sufijo f
-    double myDouble = 1.1; //64 bits, rango de aproximadamente ±1.79769313486231570E+308, sufijo d (o se puede omitir).
+    double myDouble = 3.5; //64 bits, rango de aproximadamente ±1.79769313486231570E+308, sufijo d (o se puede omitir).
     
 
     //Tipo carácter
@@ -44,28 +41,22 @@ public class Variables{
 
 ///Ingresar una variable por consola
 Scanner entrada  = new Scanner(System.in);//System.in es un flujo de entrada estándar que lee datos desde la consola.
-
-System.out.println("Ingrese el primer número entero");
-int intUser = entrada.nextInt(); //nextInt te permite leer por consola un entero y lo almacena en IntUser
-entrada.nextLine();
-System.out.println("Ingrese el Segundo número entero");
+System.out.println("Ingrese el primer número entero");//int intUser = entrada.nextInt(); //nextInt te permite leer por consola un entero y lo almacena en IntUser
+int intUser1 = entrada.nextInt();//System.out.println("Ingrese el //egundo número entero");
 int intUser2 = entrada.nextInt();
+//-----------------------------
 
-////No me deja convertir de un tipo de dato entero numérico grande a uno más chico
-int resultado = intUser + intUser2;
-
+//No me deja convertir de un tipo de//dato entero numérico grande a uno más chico sin castearlo, Necesito colocarle el (tipo)
+int resultado = intUser1 + intUser2;
 System.out.println("el resultado es "+ resultado);
+//------------------------------
+System.out.println("Mi double normal "+ myDouble);
+myDouble = (int) myDouble; // Conversión explícita de double a int
+System.out.println("My Double inteado "+ myDouble);
 
-// Convertir tipos de datos
-
-
+///Truco, puedo setear el valor decimal a un flotante casteandoló sin signo y volviendo a colocarlo en un flotante:
+myDouble = (int) myDouble;
+System.out.println("omg " + myDouble);
 entrada.close(); //tengo que cerrar el objeto tipo Scanner
-
-
-
-
-
-
-
     }
 }
