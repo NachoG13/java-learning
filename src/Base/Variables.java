@@ -41,6 +41,7 @@ public class Variables{
     System.out.println(myInteger);
 
 //CONVERSIÓN ENTRE VARIABLES
+
 ///Ingresar una variable por consola
 Scanner entrada  = new Scanner(System.in);//System.in es un flujo de entrada estándar que lee datos desde la consola.
 
@@ -66,5 +67,30 @@ entrada.close(); //tengo que cerrar el objeto tipo Scanner
 
 
 
+    }
+}
+class Animal {
+    public void hacerSonido() {
+        System.out.println("El animal hace un sonido");
+    }
+}
+
+class Perro extends Animal {
+    public void hacerSonido() {
+        System.out.println("El perro ladra");
+    }
+
+    public void mostrarTruco() {
+        System.out.println("El perro hace un truco");
+    }
+}
+
+public class ConversionExplicita {
+    public static void main(String[] args) {
+        Animal miAnimal = new Perro(); // Conversión implícita de Perro a Animal
+        miAnimal.hacerSonido(); // Imprime: El perro ladra
+
+        Perro miPerro = (Perro) miAnimal; // Conversión explícita de Animal a Perro
+        miPerro.mostrarTruco(); // Imprime: El perro hace un truco
     }
 }
