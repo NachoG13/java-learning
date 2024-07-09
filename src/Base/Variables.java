@@ -51,7 +51,7 @@ System.out.println("Ingrese el Segundo número entero");
 int intUser2 = entrada.nextInt();
 
 ////No me deja convertir de un tipo de dato entero numérico grande a uno más chico
-// short resultado = intUser + intUser2;
+int resultado = intUser + intUser2;
 
 System.out.println("el resultado es "+ resultado);
 
