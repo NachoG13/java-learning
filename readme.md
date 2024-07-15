@@ -46,3 +46,16 @@ Recibe una cadena como entrada, "extrae" la información necesaria y la conviert
 <Parse[tipo de dato](String s, int radix)`> -> se utiliza para obtener el tipo de datos primitivo de una cadena.
  - `s` -> cadena que representa un valor decimal con signo
  - `radix` -> la base de un sistema numérico. Ej: 2 (binario). *No se pueden con flotantes.*
+
+ # Listas
+ ## Implementaciones de la interfaz List:
+    ArrayList, eficiente para iterar
+    LinkedList, nodos conectados uno tras otro, no es eficiente para iterar
+    Vector, como Arraylist pero usado para acceso concurrente
+
+## Operaciones Comunes en Listas
+    Agregar Elemento: add(elemento) - Añade un elemento al final de la lista.
+    Obtener Elemento: get(índice) - Obtiene el elemento en la posición especificada.
+    Eliminar Elemento: remove(índice) o remove(elemento) - Elimina el elemento en la posición especificada o el primer elemento que coincide con el objeto especificado.
+    Tamaño de la Lista: size() - Devuelve el número de elementos en la lista.
+    Recorrer la Lista: Se puede usar un bucle for tradicional o un for-each
