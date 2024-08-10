@@ -50,7 +50,7 @@ Recibe una cadena como entrada, "extrae" la información necesaria y la conviert
  # Listas
  ## Implementaciones de la interfaz List:
 - `ArrayList`, eficiente para iterar. 
-    Necesario importar java.util.ArrayList
+    - Necesario importar java.util.ArrayLista
 - `LinkedList`, nodos conectados uno tras otro, no es eficiente para iterar, acceso secuencial
 - `Vector`, como Arraylist pero usado para acceso concurrente
 
