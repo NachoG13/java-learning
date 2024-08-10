@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../AAUniversidad/3ro/1erCuatrimestre/Taller_de_Programacion/Java_TalleProgramación"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"src/Base"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		],
+		"CodeGPT.apiKey": "OpenAI"
+	}
+}

@@ -19,11 +19,7 @@ public class Conditionals {
             
             entrada.close();
         }
-        while (boolean2 = true) {
-            
-            
-            
-        }
+        
         System.out.println("Ingrese la cantidad que desea repetir");
         byte fin = entrada.nextByte();
         for (int i = 0; i< fin; i++) {
