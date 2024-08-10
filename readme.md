@@ -50,9 +50,15 @@ Recibe una cadena como entrada, "extrae" la información necesaria y la conviert
  # Listas
  ## Implementaciones de la interfaz List:
 - `ArrayList`, eficiente para iterar. 
+    - List<String> myList = new ArrayList<>();
     - Necesario importar java.util.ArrayLista
 - `LinkedList`, nodos conectados uno tras otro, no es eficiente para iterar, acceso secuencial
+    - List<Boolean> myLinkedList = new LinkedList<>();
+    - Necesario importar java.util.LinkedList
 - `Vector`, como Arraylist pero usado para acceso concurrente
+    - List<Integer> myVector = new Vector<>();
+    - Necesario importar java.util.Vector
+   
 
 ## Operaciones Comunes en Listas
     Agregar Elemento: add(elemento) - Añade un elemento al final de la lista.
@@ -60,3 +66,5 @@ Recibe una cadena como entrada, "extrae" la información necesaria y la conviert
     Eliminar Elemento: remove(índice) o remove(elemento) - Elimina el elemento en la posición especificada o el primer elemento que coincide con el objeto especificado.
     Tamaño de la Lista: size() - Devuelve el número de elementos en la lista.
     Recorrer la Lista: Se puede usar un bucle for tradicional o un for-each
+# Map
+Tipo de dato de java que almacena datos clave-valor
