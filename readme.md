@@ -4,6 +4,7 @@ Aquí se irán subiendo los avances y cositas sobre Java que voy teniendo
 
 ## Enlaces a los cursos utilizados
 - `Mouredev` : https://www.youtube.com/watch?v=W86KTBSiX2o&ab_channel=MoureDevbyBraisMoure
+- `Javatpoint`: https://www.javatpoint.com/java-data-types
 
 # Cosas aprendidas
 
@@ -39,7 +40,8 @@ myDouble = (int) myDouble;
  - <Animal miAnimal = new Perro();> -> Conversión implícita de Perro a Animal. Cuando se crea el objeto
  - <Perro miPerro = (Perro) miAnimal;> -> Conversión explícita de Animal a Perro. Cuando se declara
     
-
+## Operators
+https://www.javatpoint.com/java-data-types
 ## Parse()
 Recibe una cadena como entrada, "extrae" la información necesaria y la convierte en un objeto de la clase que llama
 
@@ -66,5 +68,43 @@ Recibe una cadena como entrada, "extrae" la información necesaria y la conviert
     Eliminar Elemento: remove(índice) o remove(elemento) - Elimina el elemento en la posición especificada o el primer elemento que coincide con el objeto especificado.
     Tamaño de la Lista: size() - Devuelve el número de elementos en la lista.
     Recorrer la Lista: Se puede usar un bucle for tradicional o un for-each
+
 # Map
-Tipo de dato de java que almacena datos clave-valor
+Tipo de dato de java que almacena pares clave-valor
+
+## Implementaciones Comunes:
+
+- HashMap: Es la implementación más común de Map. Permite la búsqueda rápida de claves y es no sincronizada (no es segura para su uso con múltiples hilos simultáneos).
+- TreeMap: Mantiene las claves ordenadas según su orden natural o un comparador personalizado.
+- LinkedHashMap: Mantiene el orden de inserción de las claves.
+- Hashtable: Es similar a HashMap pero es sincronizada, lo que la hace segura para su uso en entornos con múltiples hilos.
+## Métodos Principales:
+
+- `put(K clave, V valor)`: Añade una pareja clave-valor al Map. Si la clave ya existe, sobrescribe el valor.
+- `get(Object clave)`: Devuelve el valor asociado a la clave, o null si no existe.
+- `remove(Object clave)`: Elimina la pareja clave-valor.
+- `containsKey(Object clave)`: Devuelve true si el Map contiene la clave especificada.
+- `keySet()`: Devuelve un conjunto de todas las claves del Map.
+- `values()`: Devuelve una colección con todos los valores del Map.
+
+# Palabras Reservadas o Java Keywords
+https://www.javatpoint.com/java-keywords
+## final
+- En la declaración de una variable: la variable se convierte en una *constante*.
+- En un método: no puede ser sobrescrito por una subclase.
+- En una clase: no puede ser subclasificada (no puedes heredar de esa clase).
+
+## static
+Define miembros que pertenecen a la clase en lugar de a instancias.
+## abstract
+Define métodos y clases abstractos que deben ser implementados por subclases.
+## synchronized
+Asegura la exclusividad en el acceso a código crítico.
+## transient
+Evita que un campo sea serializado.
+## volatile
+Asegura la visibilidad de los cambios en variables en un entorno multihilo.
+## this 
+Referencia al objeto actual.
+## super
+Accede a los miembros de la clase padre.

@@ -6,7 +6,7 @@ public class Variables{
     public static void main(String[] args) {
     
 
-
+///https://www.javatpoint.com/java-data-types
 //Tipos Primitivos
     //Tipos Numéricos Enteros:
     byte myByte = -128; //8 bits, rango de -128 a 127.

@@ -4,17 +4,22 @@
 			"path": "."
 		},
 		{
-			"path": "../../../AAUniversidad/3ro/1erCuatrimestre/Taller_de_Programacion/Java_TalleProgramación"
+			"path": "../../../AAUniversidad/4to/Segundo_Cuatrimestre/Prog_Avanzada/PA2"
+		},
+		{
+			"path": "../../../AAUniversidad/2do/2do Cuatrimestre/Paradigmas/Actividades Paris"
+		},
+		{
+			"path": "../../../AAUniversidad/3ro/1erCuatrimestre/Taller_de_Programacion"
 		}
 	],
 	"settings": {
 		"java.project.sourcePaths": [
-			"src/Base"
+			"Java_TalleProgramación/AplicacionGUI/src"
 		],
 		"java.project.outputPath": "bin",
 		"java.project.referencedLibraries": [
 			"lib/**/*.jar"
-		],
-		"CodeGPT.apiKey": "OpenAI"
+		]
 	}
 }

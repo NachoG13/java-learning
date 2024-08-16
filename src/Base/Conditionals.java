@@ -22,11 +22,18 @@ public class Conditionals {
         
         System.out.println("Ingrese la cantidad que desea repetir");
         byte fin = entrada.nextByte();
+        //for
         for (int i = 0; i< fin; i++) {
             System.out.println("Faltan " + fin + " para terminar");
-            
-            
         }
+        int j = 1;
+        //while
+        while (j < 5){
+            System.out.println(j);
+            j+=j;
+        }
+
+
         }
     }
     
